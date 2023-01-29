@@ -63,8 +63,8 @@ html, body {
 }
 
 .card {
-  width: 20%;
-  height: 40%;
+  width: 400px;
+  height: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
