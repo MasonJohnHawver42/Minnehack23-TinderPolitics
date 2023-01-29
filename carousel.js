@@ -1,8 +1,18 @@
+const shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+
 class Carousel {
   constructor(element, data) {
     this.board = element;
     this.data = data;
     this.index = 0;
+    shuffleArray(this.data);
     this.handle(); // handle getures
   }
 
